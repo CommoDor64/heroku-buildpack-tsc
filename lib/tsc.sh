@@ -50,5 +50,5 @@ compile_ts() {
     echo "Using configuration at $TSC_CONFIG"
 
     cd "$build_dir"
-    node ./scripts/build.js
+    node ./scripts/build.js --production
 }
