@@ -5,7 +5,7 @@ CACHE_DIR=${2:-}
 ENV_DIR=${3:-}
 BP_DIR=$(cd $(dirname ${0:-}); cd ..; pwd)
 
-TSC=$BUILD_DIR/node_modules/.bin/tsc
+TSC=$BUILD_DIR/scripts/build.js
 
 LOG_FILE=$(mktemp -t tsc-build-log.XXXXX)
 echo "" > "$LOG_FILE"
